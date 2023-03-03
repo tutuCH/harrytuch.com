@@ -1,8 +1,10 @@
+@import "/src/styles/Variables.scss";
 .app {
+    // margin-top: 3.5rem;
     width: 100%;
-    padding: 20px;
-    border: 1px solid #000;
-    box-sizing: border-box;
+    margin-right: auto;
+    margin-left: auto;
+    background: $dark-green;
   }
   
   input {
@@ -40,3 +42,5 @@
     color: #fff;
     padding: 10px;
   }
+
+

@@ -1,0 +1,14 @@
+@import "../styles/Variables.scss";
+
+.navbar-element{
+    color: $gray
+}
+
+.navbar-element:focus{
+    color: $dark-yellow
+}
+
+.navbar,
+.navbar-default {
+    background-image: none !important;
+}
