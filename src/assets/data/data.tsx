@@ -1,5 +1,9 @@
 import { PersonalInfo, NavBarTabs, TabsDef } from "./dataDef";
 
+export const landingInfo = {
+    subtitle: "Nice to meet you, I'm",
+    title: 'Harry Tu'
+}
 export const navBarInfos: NavBarTabs = {
     title: 'Hi there',
 }

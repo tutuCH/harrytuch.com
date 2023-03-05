@@ -6,17 +6,14 @@ const PortTabItems = (props: TabItemsDef) => {
   return (
     <div className="tab-items-container">
       <div>
-        <h3>{title}</h3>
+        <h5>{title}</h5>
         <p>{`${period}`}</p>
-        <p>
-          {content.map((sentence: string) => {
-            return sentence;
+        
+          {content.map((sentence: string, index: number) => {
+            return (<p key={index}>{sentence}</p>);
           })}
-        </p>
+        
       </div>
-      {/* <button onClick={deleteItem} className="remove">
-        刪除
-      </button> */}
     </div>
   );
 };

@@ -1,11 +1,12 @@
 import { useState, useEffect, useRef, SetStateAction } from "react";
 import { API_GET_DATA } from '../../global/constants'
 
-import Edit from "./sections/Edit";
-import List from "./sections/List";
 import PortNavbar from "../../components/PortNavbar";
-import Landing from "./sections/landing/Landing"
-import Details from "./sections/details/Details"
+import Landing from "./sections/Landing"
+import PersonalDetails from "./sections/PersonalDetails";
+import Skills from "./sections/Skills";
+import Experiences from "./sections/Experiences"
+import Contact from "./sections/Contact";
 import "./index.scss";
 
 async function fetchData(setData: { (value: SetStateAction<never[]>): void; (arg0: any): void; }) {
@@ -43,9 +44,12 @@ const HomePage = () => {
   return (
     <div className="app">
       <PortNavbar></PortNavbar>
-      <div className="container-lg">
-        <Landing></Landing>
-        <Details></Details>  
+      <Landing></Landing>
+      <div className="description__container">
+        <PersonalDetails></PersonalDetails>  
+        <Skills></Skills>  
+        <Experiences></Experiences> 
+        <Contact></Contact>   
       </div>
       {/* <Edit add={setData} submittingStatus={submittingStatus} />
       <List listData={data} deleteData={setData} submittingStatus={submittingStatus} /> */}
