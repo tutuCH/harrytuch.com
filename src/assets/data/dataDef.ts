@@ -1,10 +1,22 @@
 export interface NavBarTabs {
     title: string,
 }
+export interface linkedContent {    
+    content: string,
+    link: string
+    src: string
+}
+
 export interface PersonalInfo {
-    name: string,
-    description: string,
-    age: number,
+    content: string,
+    education: Array<linkedContent>,
+    certificates: Array<linkedContent>,
+}
+
+export interface SkillsDef {
+    Languages: Array<string>,
+    Frameworks: Array<string>,
+    Tools: Array<string>,
 }
 
 export interface TabsDef {

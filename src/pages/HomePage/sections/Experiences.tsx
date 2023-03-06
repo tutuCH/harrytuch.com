@@ -6,13 +6,11 @@ const Experiences = () => {
   return (
     <div id="Experiences" className="section__container">
       <div className='section-header-left'>My Experiences</div>
-      {/* <div className='section-content-left'> */}
         <PortTabs
           alignment={pastExp.alignment}
           items={pastExp.items}
         />
       </div>
-    // </div>
   );
 };
 

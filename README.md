@@ -1,8 +1,17 @@
-# Getting Started with Create React App
+# Harry Tu - Software Engineer
+![website](./public/website.png)
+### Welcome to my profile website! This website is a showcase of my skills, projects, and experience as a software engineer. It is written in React TypeScript and uses Bootstrap for styling.
+
+### If you have any questions or would like to discuss a potential project or collaboration, please feel free to contact me at [my email](https://www.linkedin.com/in/harry-tu-6a0080175) or connect with me on [LinkedIn](https://www.linkedin.com/in/harry-tu-6a0080175).
+
+### Thank you for visiting my profile website!
+
+---------
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+### Available Scripts
 
 In the project directory, you can run:
 

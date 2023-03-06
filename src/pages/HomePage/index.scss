@@ -97,7 +97,6 @@
 .port-tabs__container {
   display: flex;
   gap: 1rem;
-  max-width: 500px;
   color: $white;
   .tab-button__element{
     border-left: 1px solid $white;
@@ -168,26 +167,36 @@
   }    
 }
 
-.skills-grid__container{
-  display: flex;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 800px;
-  justify-content: space-evenly;
-}
 
-.profile-element{
-  transition: all .3s;
-  border-radius: 16px;
-  width: 100%;
-  max-width: 200px;
-  box-shadow: 1rem 1rem $light-blue;
-  margin: 1rem;
-}
-
-.profile-element:hover {
-  transform: translate(-0.5rem,-0.5rem);
-  box-shadow: 2rem 2rem $light-blue;
+.about-me__container {
+  .featured-experiences-link{
+    padding: 0.5rem;
+    background: $light-blue;
+  }
+  .profile-element{
+    transition: all .3s;
+    width: 100%;
+    max-width: 200px;
+    box-shadow: 1rem 1rem $light-blue;
+    margin: 1rem;
+  }
+  
+  .profile-element:hover {
+    transform: translate(-0.5rem,-0.5rem);
+    box-shadow: 2rem 2rem $light-blue;
+  }
+  .experiences-animation-element{
+    transition: all .3s;
+    margin: 1rem;
+  }
+  
+  .experiences-animation-element:hover {
+    transform: translate(-0.5rem,-0.5rem);
+  }
+  .experience-logo {
+    width: 100%;
+    max-width: 75px;
+  }
 }
 
 .contact-section__container{
@@ -212,6 +221,9 @@
     border-bottom: 1px solid $white;
     margin: auto 1em;
   }
+  .contact-button__container{
+    margin-top: 1rem;
+  }
   .contact-button {
     width: 150px;
   }  
@@ -222,7 +234,7 @@
   max-width: 600px;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 10rem
+  padding-top: 15rem;
 }
 
 .section-content-left {
@@ -266,4 +278,23 @@
   width: 33%;
   border-bottom: 1px solid $white;
   margin: auto 1em;
+}
+
+.arrow {
+  border: solid $light-blue;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  margin: 0 .5rem;
+}
+
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.dashed-line {
+  border-top: 1px dashed;
+  margin: 1rem;
+  width: 66%;
 }

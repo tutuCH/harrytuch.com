@@ -10,7 +10,7 @@ const PortTabItems = (props: TabItemsDef) => {
         <p>{`${period}`}</p>
         
           {content.map((sentence: string, index: number) => {
-            return (<p key={index}>{sentence}</p>);
+            return (<p key={index}><i className="arrow right"></i>{sentence}</p>);
           })}
         
       </div>

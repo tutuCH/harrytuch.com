@@ -1,18 +1,17 @@
 import "../../HomePage/index.scss";
 import { Button, Container, Row } from "react-bootstrap";
+import { contactMessage } from '../../../assets/data/data';
 const Contact = () => {
-  const randomContent =
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sodales odio nisi, at fringilla lectus interdum ac. Etiam non justo sit amet lectus porttitor aliquet. Morbi vel vehicula tellus. Etiam sit amet diam id nisl malesuada malesuada.";
   return (
     <div id="Contact" className="contact-section__container">
       <Container>
         <Row>
-          <div className="contact-section-header">Get in Touch!!</div>
+          <div className="contact-section-header">Get in Touch!</div>
         </Row>
         <Container>
           <div className="contact-section-content__container">
-            <Row>{randomContent}</Row>
-            <Row className="justify-content-center">
+            <Row>{contactMessage}</Row>
+            <Row className="justify-content-center contact-button__container">
               <Button
                 className="contact-button"
                 variant="light"
