@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/profile-website.v1/static/css/main.a3c12b52.css",
+    "main.js": "/profile-website.v1/static/js/main.f940be8a.js",
+    "static/js/787.5e500032.chunk.js": "/profile-website.v1/static/js/787.5e500032.chunk.js",
+    "static/media/cuhk-logo.png": "/profile-website.v1/static/media/cuhk-logo.ff297d19c654cbc91ca6.png",
+    "static/media/aws-saa-logo.png": "/profile-website.v1/static/media/aws-saa-logo.5de5ac5041c48c198d8b.png",
+    "static/media/profilePic.jpeg": "/profile-website.v1/static/media/profilePic.840b25a81a5bb366d842.jpeg",
+    "index.html": "/profile-website.v1/index.html",
+    "main.a3c12b52.css.map": "/profile-website.v1/static/css/main.a3c12b52.css.map",
+    "main.f940be8a.js.map": "/profile-website.v1/static/js/main.f940be8a.js.map",
+    "787.5e500032.chunk.js.map": "/profile-website.v1/static/js/787.5e500032.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a3c12b52.css",
+    "static/js/main.f940be8a.js"
+  ]
+}
