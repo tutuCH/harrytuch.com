@@ -16,8 +16,7 @@ const PersonalDetails = () => {
           key={index}
           className="featured-experiences-link experiences-animation-element"
           onClick={() => {
-            const win: Window = window;
-            return (win.location = e.link);
+            return (window.open(e.link, '_blank', 'noreferrer'));
           }}          
         >
           <Row>
@@ -49,7 +48,6 @@ const PersonalDetails = () => {
             <div className="featured-experiences-content__container">
               <div className="education-content-element">
                 <h5>Education</h5>
-                <img key={0} src="../../../assets/images/cuhk-logo.png" style={{ width: "100%" }} alt=""/>
                 <div>{featuredExperiences(educations, 'edu')}</div>
               </div>
               <div className="certificate-content-element">

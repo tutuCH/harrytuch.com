@@ -191,7 +191,7 @@
   }
   
   .experiences-animation-element:hover {
-    transform: translate(-0.5rem,-0.5rem);
+    transform: translateY(-0.5rem);
   }
   .experience-logo {
     width: 100%;
@@ -297,4 +297,8 @@
   border-top: 1px dashed;
   margin: 1rem;
   width: 66%;
+}
+
+.navbar-expand-lg .navbar-nav {
+  align-items: center;
 }

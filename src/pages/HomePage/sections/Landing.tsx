@@ -2,6 +2,7 @@
 // import { v4 } from "uuid";
 import { landingInfo } from "../../../assets/data/data";
 import "../../HomePage/index.scss";
+import { Button, Container, Row } from "react-bootstrap";
 const Landing = () => {
   const bubbleDiv = Array.from({ length: 50 }, (_, i) => (
     <div className="bubble" key={i}></div>
@@ -10,10 +11,11 @@ const Landing = () => {
     <div id="Landing" className="landing-container">
       <div className="background-container">
         <div className="info-container centre">
-          <div className="info-supp-element">
-            <div className="typing">{landingInfo.subtitle}</div>
-          </div>
-          <div className="info-main-element">{landingInfo.title}</div>
+          <Container>
+            <Row className="justify-content-center info-supp-element"><div className="typing">{landingInfo.subtitle}</div></Row>
+            <Row className="justify-content-center info-main-element">{landingInfo.title}</Row>
+            {/* <Row sm={5} className="justify-content-center"><Button variant="light">Resume</Button></Row> */}
+          </Container>
         </div>
       </div>
       <div>{bubbleDiv}</div>

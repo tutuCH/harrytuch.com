@@ -1,5 +1,10 @@
-import { Container, Nav, Navbar } from "react-bootstrap";
+import { Button, Container, Nav, Navbar } from "react-bootstrap";
+import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 const PortNavbar = () => {
+  const redirectLinks = {
+    github: "https://github.com/tutuCH",
+    linkedin: "https://www.linkedin.com/in/harry-tu-6a0080175/"
+  }
   const handleClick = (event: React.MouseEvent<HTMLAnchorElement>) => {
     event.preventDefault();
     const targetId = event.currentTarget.getAttribute("href");
@@ -8,6 +13,9 @@ const PortNavbar = () => {
       targetElement.scrollIntoView({ behavior: "smooth" });
     }
   };
+  const handleRedirect = (destination: 'github' | 'linkedin') => {
+    window.open(redirectLinks[destination], '_blank', 'noreferrer');
+  }
   // function PortNavbar() {
   const sections: Array<string> = [
     "About-me",
@@ -35,6 +43,11 @@ const PortNavbar = () => {
               </Nav.Link>
             ))}
           </Nav>
+          <Nav>
+            <Nav.Link onClick={() => handleRedirect('github')}><FaGithub/></Nav.Link>
+            <Nav.Link onClick={() => handleRedirect('linkedin')}><FaLinkedinIn/></Nav.Link>
+            {/* <Nav.Link><Button variant="outline-light">Resume</Button></Nav.Link> */}
+          </Nav>          
         </Navbar.Collapse>
       </Container>
     </Navbar>
