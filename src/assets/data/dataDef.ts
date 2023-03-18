@@ -30,3 +30,10 @@ export interface TabItemsDef {
     period: string,
     content: Array<string>,
 }
+
+export interface ProjectsDef {
+    title: string,
+    content: string,
+    url?: string,
+    github: string,
+}

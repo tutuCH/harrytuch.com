@@ -1,4 +1,8 @@
 @import "/src/styles/Variables.scss";
+:root {
+  --primary: $light-blue;
+}
+
 .app {
   // margin-top: 3.5rem;
   width: 100%;
@@ -231,7 +235,7 @@
 
 .section__container {
   min-height: 75vh;
-  max-width: 600px;
+  max-width: 800px;
   margin-left: auto;
   margin-right: auto;
   padding-top: 15rem;
@@ -301,4 +305,33 @@
 
 .navbar-expand-lg .navbar-nav {
   align-items: center;
+}
+
+.projects__container {
+  color: $white;
+  .project-card__container {
+    padding: 0px;
+    background: transparent;
+    display: flex;
+  }
+  @media (min-width: 768px) {
+    .projects-image-element {
+      width: 70%;
+    }
+    .projects-text__container {
+      width: 55%;
+      align-self: flex-end;
+      padding: 1rem;
+      left: auto;
+      color: $white;
+      background-color: $light-blue;
+      opacity: 90%;
+      top: 1rem;
+      position: absolute;
+    }
+  }
+  .projects-text-footer {
+    display: flex;
+    gap: 1rem;
+  }
 }

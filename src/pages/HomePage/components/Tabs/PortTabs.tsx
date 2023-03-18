@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useState } from "react";
 import { Nav } from "react-bootstrap";
 import { TabItemsDef, TabsDef } from "../../../../assets/data/dataDef";
 import PortTabItems from "./PortTabItems";
@@ -6,7 +6,7 @@ import "../../../HomePage/index.scss";
 
 const PortTabs = (props: TabsDef) => {
   //todo: alignment will be used in the future for selecting vertical/ horizontal tab
-  const { alignment, items } = props;
+  const { items } = props;
   const [selectedTab, setSelectedTab] = useState(0);
   function selectedTabChange(e: number) {
     setSelectedTab(e);

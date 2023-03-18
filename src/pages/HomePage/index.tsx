@@ -8,6 +8,7 @@ import Skills from "./sections/Skills";
 import Experiences from "./sections/Experiences"
 import Contact from "./sections/Contact";
 import "./index.scss";
+import Projects from "./sections/Projects";
 
 async function fetchData(setData: { (value: SetStateAction<never[]>): void; (arg0: any): void; }) {
   const res = await fetch(API_GET_DATA)
@@ -49,7 +50,8 @@ const HomePage = () => {
         <PersonalDetails></PersonalDetails>  
         <Skills></Skills>  
         <Experiences></Experiences> 
-        <Contact></Contact>   
+        <Projects></Projects>
+        <Contact></Contact>
       </div>
       {/* <Edit add={setData} submittingStatus={submittingStatus} />
       <List listData={data} deleteData={setData} submittingStatus={submittingStatus} /> */}

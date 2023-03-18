@@ -1,4 +1,4 @@
-import { PersonalInfo, NavBarTabs, TabsDef, SkillsDef } from "./dataDef";
+import { PersonalInfo, NavBarTabs, TabsDef, SkillsDef, ProjectsDef } from "./dataDef";
 
 export const landingInfo = {
   subtitle: "Nice to meet you, I'm",
@@ -102,3 +102,12 @@ export const skills: SkillsDef = {
 
 export const contactMessage: string =
   "Looking for a software engineer? Whether you need a simple or complex site, I'm up for the challenge. Let's work together to create a website that reflects your unique brand. Contact me to get started!";
+
+export const projects: Array<ProjectsDef> = [
+  { 
+    title: "Rental Price Prediction",
+    content: "The website is a rental price predictor for properties in Toronto. It uses a neural network regression model trained on past rental data to make predictions. The frontend is built with React and TypeScript, while the backend is built with Flask. The user can enter the details of a property and the website will predict the rental price based on the provided information. ",
+    url: "https://tutuch.github.io/toronto_rental_prediction/",
+    github: "https://github.com/tutuCH/toronto_rental_prediction",
+  }
+]

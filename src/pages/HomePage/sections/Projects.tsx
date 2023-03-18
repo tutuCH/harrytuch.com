@@ -1,56 +1,38 @@
+import { Button, Container, Row } from "react-bootstrap";
+import { FaGithub, } from "react-icons/fa";
+import Card from 'react-bootstrap/Card';
 import "../../HomePage/index.scss";
-const Skills = () => {
-  const languages: Array<string> = [
-    "JavaScript (ES6)",
-    "TypeScript",
-    "HTML",
-    "CSS/Sass",
-    "Python",
-    "SQL",
-    "R",
-  ];
-  const frameworks: Array<string> = [
-    "Ember & Glimmer",
-    "React",
-    "Jekyll",
-    "Node",
-    "D3",
-    "Wordpress",
-    "Timber",
-  ];
-  const tools: Array<string> = [
-    "Bash",
-    "Git & Github",
-    "Gulp & Grunt",
-    "Chrome DevTools",
-    "Postman",
-    "MongoDB",
-  ];
+import projectImage from "../../../assets/images/toronto-rental-prediction.png";
+import { projects } from "../../../assets/data/data";
+import { ProjectsDef } from "../../../assets/data/dataDef";
+const Projects = () => {
+  function project() {
+    return projects.map(
+      (value: ProjectsDef) => (
+        <Container>
+          <Card className="project-card__container">
+            <Card.Img  className="projects-image-element" src={projectImage}/>
+            <div className="projects-text__container">
+              <Card.Title>{value.title}</Card.Title>
+              <Card.Text> {value.content} </Card.Text>
+              <footer className="projects-text-footer">
+                <Button variant="secondary" onClick={() => window.open(value.url, '_blank', 'noreferrer')}>Check it out</Button>
+                <Button variant="secondary" onClick={() => window.open(value.github, '_blank', 'noreferrer')}><FaGithub/></Button>
+              </footer>
+            </div>
+          </Card>          
+        </Container>
+      )
+    );
+  }
   return (
-    <div id="Projects" className="section__container">
-      <div className='section-header-right'>My Skills</div>
-      <div className="skills-grid__container section-content-right">
-        <div className="languages-elements">
-          <h5 style={{textDecorationLine: 'underline'}}>Languages</h5>
-          {languages.map((item: string) => (
-            <p key={item}>{item}</p>
-          ))}
-        </div>
-        <div className="frameworks-elements">
-          <h5 style={{textDecorationLine: 'underline'}}>Frameworks</h5>          
-          {frameworks.map((item: string) => (
-            <p key={item}>{item}</p>
-          ))}
-        </div>
-        <div className="tools-elements">
-          <h5 style={{textDecorationLine: 'underline'}}>Tools</h5>          
-          {tools.map((item: string) => (
-            <p key={item}>{item}</p>
-          ))}
-        </div>
-      </div>
+    <div id="Projects" className="projects__container section__container">
+      <div className="section-header-right">Projects</div>
+      <div className="projects-section-content-right">
+        <div>{project()}</div>
+      </div>      
     </div>
   );
 };
 
-export default Skills;
+export default Projects;
