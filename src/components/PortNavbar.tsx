@@ -21,6 +21,7 @@ const PortNavbar = () => {
     "About-me",
     "Skills",
     "Experiences",
+    "Projects",
     "Contact",
   ];
   return (
