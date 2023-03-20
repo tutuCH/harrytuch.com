@@ -10,7 +10,7 @@ const Projects = () => {
     return projects.map(
       (value: ProjectsDef) => (
         <Container>
-          <Card className="project-card__container">
+          <Card className="project-card__container section__container">
             <Card.Img  className="projects-image-element" src={projectImage}/>
             <div className="projects-text__container">
               <Card.Title>{value.title}</Card.Title>

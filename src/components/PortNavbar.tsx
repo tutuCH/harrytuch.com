@@ -10,9 +10,10 @@ const PortNavbar = () => {
     const targetId = event.currentTarget.getAttribute("href");
     const targetElement = document.getElementById(targetId!.substring(1));
     if (targetElement) {
-      targetElement.scrollIntoView({ behavior: "smooth" });
+      targetElement.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest",});
     }
   };
+
   const handleRedirect = (destination: 'github' | 'linkedin') => {
     window.open(redirectLinks[destination], '_blank', 'noreferrer');
   }

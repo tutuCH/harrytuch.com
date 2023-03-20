@@ -36,10 +36,12 @@ export const pastExp: TabsDef = {
       title: "Software Developer",
       period: "June, 2021 - Oct, 2022",
       content: [
-        "Tech consultant at FWD, a multinational insurance company based in Hong Kong.",
-        "Responsible for frontend development for award-winning FWD agent assist portal platform using AngularJs",
-        "Tech consultant at Value Partners Group, a Hong Kong-based independent asset management firm",
-        "Conduct database updates and reduced SQL query execution time by >50%.",
+        "Experienced tech consultant with a focus on frontend development, having worked with multinational organizations such as FWD, a leading insurance company based in Hong Kong.",
+        "Successfully contributed to the development of an award-winning corporate management agent assist portal platform using Angular in TypeScript, showcasing expertise in UI/UX design and development.",
+        "Demonstrated exceptional skills in database management and optimization while serving as a Tech Consultant at Value Partners Group, an independent asset management firm based in Hong Kong.",
+        "Achieved a >50% reduction in SQL query execution time through effective database updates and maintenance.",
+        "Coordinated with cross-functional teams to ensure seamless implementation of changes, and produced comprehensive documentation to facilitate knowledge sharing and future maintenance.",
+        
       ],
     },
     {
@@ -47,10 +49,9 @@ export const pastExp: TabsDef = {
       title: "Software Engineer Intern",
       period: "June,2020 - June,2021",
       content: [
-        "Responsible for full stack development of a third-party payment app and front-end development for delivery applications and using VueJs for frontend and ExpressJS for backend",
-        "Manage database with millions of data using mySQL",
-        "Conduct a major application layout update",
-        "Experience in Agile developing environment",
+        "Demonstrated full-stack development expertise while working on a third-party payment app, and contributed to front-end development for delivery applications using Vue.js for the frontend and Express.js for the backend.",
+        "Participated in a major application revamp for Jumppoint, a e-Commerce Logistics Technology Platform, using Vue.js for the frontend, showcasing exceptional UX/UI design and development skills.",
+        "Designed and developed an internal dashboard using Vue.js and Express.js, providing real-time insights into revenue and business performance to facilitate data-driven decision-making.",
       ],
     },
     {
@@ -59,7 +60,10 @@ export const pastExp: TabsDef = {
       period: "June, 2019 - August, 2019",
       content: [
         "Responsible for developing and debugging for a Java Spring Boot application with features including as data visualization, real-time data update etc.",
-        "Hand on experience in Sybase",
+        "Created RESTful Web Service APIs for Anchorage View Project's server in Java using Spring MVC.",
+        "Converted the Anchorage View Project's web application to use REST web service calls.",
+        "Designed and implemented an interface to fetch data from MDH-MPA APIs and store it in Sybase TSQL using Java.",
+        
       ],
     },
   ],
@@ -81,14 +85,15 @@ export const skills: SkillsDef = {
         "React",
         "Vue",
         "Bootstrap",
+        "Tailwindcss",
         "ExpressJS",
         "NestJS",
         "Tensorflow",
-        "Django",
+        "Flask",
     ],
     Tools: [
         "Bash",
-        "Git & Github & Gitlab",
+        "Git",
         "Amazon Web Services",
         "Google Colab",
         "Jupyter Notebook",
