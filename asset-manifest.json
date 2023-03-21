@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/profile-website.v1/static/css/main.65c15d93.css",
-    "main.js": "/profile-website.v1/static/js/main.bfc4abb7.js",
+    "main.css": "/profile-website.v1/static/css/main.4bc817ef.css",
+    "main.js": "/profile-website.v1/static/js/main.8c4ec787.js",
     "static/js/787.a499b8ec.chunk.js": "/profile-website.v1/static/js/787.a499b8ec.chunk.js",
     "static/media/toronto-rental-prediction.png": "/profile-website.v1/static/media/toronto-rental-prediction.f882ad8bb987322c520b.png",
     "static/media/cuhk-logo.png": "/profile-website.v1/static/media/cuhk-logo.ff297d19c654cbc91ca6.png",
     "static/media/aws-saa-logo.png": "/profile-website.v1/static/media/aws-saa-logo.5de5ac5041c48c198d8b.png",
     "static/media/profilePic.jpeg": "/profile-website.v1/static/media/profilePic.840b25a81a5bb366d842.jpeg",
     "index.html": "/profile-website.v1/index.html",
-    "main.65c15d93.css.map": "/profile-website.v1/static/css/main.65c15d93.css.map",
-    "main.bfc4abb7.js.map": "/profile-website.v1/static/js/main.bfc4abb7.js.map",
+    "main.4bc817ef.css.map": "/profile-website.v1/static/css/main.4bc817ef.css.map",
+    "main.8c4ec787.js.map": "/profile-website.v1/static/js/main.8c4ec787.js.map",
     "787.a499b8ec.chunk.js.map": "/profile-website.v1/static/js/787.a499b8ec.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.65c15d93.css",
-    "static/js/main.bfc4abb7.js"
+    "static/css/main.4bc817ef.css",
+    "static/js/main.8c4ec787.js"
   ]
 }
