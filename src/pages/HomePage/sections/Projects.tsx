@@ -9,8 +9,8 @@ const Projects = () => {
   function project() {
     return projects.map(
       (value: ProjectsDef) => (
-        <Container>
-          <Card className="project-card__container section__container">
+        <Container className="section__container">
+          <Card className="project-card__container">
             <Card.Img  className="projects-image-element" src={projectImage}/>
             <div className="projects-text__container">
               <Card.Title>{value.title}</Card.Title>
@@ -20,7 +20,8 @@ const Projects = () => {
                 <Button variant="secondary" onClick={() => window.open(value.github, '_blank', 'noreferrer')}><FaGithub/></Button>
               </footer>
             </div>
-          </Card>          
+          </Card>
+          <Row><h5>More Coming Soon...</h5></Row>
         </Container>
       )
     );
