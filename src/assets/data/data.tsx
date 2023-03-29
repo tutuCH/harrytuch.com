@@ -37,7 +37,7 @@ export const pastExp: TabsDef = {
       period: "June, 2021 - Oct, 2022",
       content: [
         "Experienced tech consultant with a focus on frontend development, having worked with multinational organizations such as FWD, a leading insurance company based in Hong Kong.",
-        "Successfully contributed to the development of an award-winning corporate management agent assist portal platform using Angular in TypeScript, showcasing expertise in UI/UX design and development.",
+        "Successfully contributed to the development of an award-winning corporate management agent assist portal platform using Angular in TypeScript, showcasing expertise in web development.",
         "Demonstrated exceptional skills in database management and optimization while serving as a Tech Consultant at Value Partners Group, an independent asset management firm based in Hong Kong.",
         "Achieved a >50% reduction in SQL query execution time through effective database updates and maintenance.",
         "Coordinated with cross-functional teams to ensure seamless implementation of changes, and produced comprehensive documentation to facilitate knowledge sharing and future maintenance.",
@@ -50,7 +50,7 @@ export const pastExp: TabsDef = {
       period: "June,2020 - June,2021",
       content: [
         "Demonstrated full-stack development expertise while working on a third-party payment app, and contributed to front-end development for delivery applications using Vue.js for the frontend and Express.js for the backend.",
-        "Participated in a major application revamp for Jumppoint, a e-Commerce Logistics Technology Platform, using Vue.js for the frontend, showcasing exceptional UX/UI design and development skills.",
+        "Participated in a major application revamp for Jumppoint, a e-Commerce Logistics Technology Platform, using Vue.js for the frontend, showcasing development skills.",
         "Designed and developed an internal dashboard using Vue.js and Express.js, providing real-time insights into revenue and business performance to facilitate data-driven decision-making.",
       ],
     },
@@ -63,7 +63,6 @@ export const pastExp: TabsDef = {
         "Created RESTful Web Service APIs for Anchorage View Project's server in Java using Spring MVC.",
         "Converted the Anchorage View Project's web application to use REST web service calls.",
         "Designed and implemented an interface to fetch data from MDH-MPA APIs and store it in Sybase TSQL using Java.",
-        
       ],
     },
   ],
