@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/profile-website.v1/static/css/main.df352d8a.css",
+    "main.css": "/profile-website.v1/static/css/main.eb093b48.css",
     "main.js": "/profile-website.v1/static/js/main.c5029e60.js",
     "static/js/787.a499b8ec.chunk.js": "/profile-website.v1/static/js/787.a499b8ec.chunk.js",
     "static/media/toronto-rental-prediction.png": "/profile-website.v1/static/media/toronto-rental-prediction.f882ad8bb987322c520b.png",
@@ -8,12 +8,12 @@
     "static/media/aws-saa-logo.png": "/profile-website.v1/static/media/aws-saa-logo.5de5ac5041c48c198d8b.png",
     "static/media/profilePic.jpeg": "/profile-website.v1/static/media/profilePic.840b25a81a5bb366d842.jpeg",
     "index.html": "/profile-website.v1/index.html",
-    "main.df352d8a.css.map": "/profile-website.v1/static/css/main.df352d8a.css.map",
+    "main.eb093b48.css.map": "/profile-website.v1/static/css/main.eb093b48.css.map",
     "main.c5029e60.js.map": "/profile-website.v1/static/js/main.c5029e60.js.map",
     "787.a499b8ec.chunk.js.map": "/profile-website.v1/static/js/787.a499b8ec.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.df352d8a.css",
+    "static/css/main.eb093b48.css",
     "static/js/main.c5029e60.js"
   ]
 }
