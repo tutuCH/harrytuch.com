@@ -1,12 +1,12 @@
 # Harry Tu - Software Engineer
 ![website](./public/website.png)
 
-##### Feel free to check out the website [here](https://tutuch.github.io/profile-website.v1/)
-##### Welcome to my profile website! This website is a showcase of my skills, projects, and experience as a software engineer. It is written in React TypeScript and uses Bootstrap for styling.
+Feel free to check out the website [here](https://tutuch.github.io/profile-website.v1/)
+Welcome to my profile website! This website is a showcase of my skills, projects, and experience as a software engineer. It is written in React TypeScript and uses Bootstrap for styling.
 
-##### If you have any questions or would like to discuss a potential project or collaboration, please feel free to contact me at [my email](https://www.linkedin.com/in/harry-tu-6a0080175) or connect with me on [LinkedIn](https://www.linkedin.com/in/harry-tu-6a0080175).
+If you have any questions or would like to discuss a potential project or collaboration, please feel free to contact me at [my email](https://www.linkedin.com/in/harry-tu-6a0080175) or connect with me on [LinkedIn](https://www.linkedin.com/in/harry-tu-6a0080175).
 
-##### Thank you for visiting my profile website!
+Thank you for visiting my profile website!
 
 ---------
 ## Getting Started with Create React App
