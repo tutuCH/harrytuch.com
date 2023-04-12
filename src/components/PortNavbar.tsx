@@ -1,9 +1,10 @@
-import { Container, Nav, Navbar } from "react-bootstrap";
+import { Button, Container, Nav, Navbar } from "react-bootstrap";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 const PortNavbar = () => {
   const redirectLinks = {
     github: "https://github.com/tutuCH",
-    linkedin: "https://www.linkedin.com/in/harry-tu-6a0080175/"
+    linkedin: "https://www.linkedin.com/in/harry-tu-6a0080175/",
+    resume: "https://www.canva.com/design/DAFftvCTTp0/2jE04TWFr9R4zkK1issw_g/view?utm_content=DAFftvCTTp0&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink",
   }
   const handleClick = (event: React.MouseEvent<HTMLAnchorElement>) => {
     event.preventDefault();
@@ -14,7 +15,7 @@ const PortNavbar = () => {
     }
   };
 
-  const handleRedirect = (destination: 'github' | 'linkedin') => {
+  const handleRedirect = (destination: 'github' | 'linkedin' | 'resume') => {
     window.open(redirectLinks[destination], '_blank', 'noreferrer');
   }
   // function PortNavbar() {
@@ -48,7 +49,7 @@ const PortNavbar = () => {
           <Nav>
             <Nav.Link onClick={() => handleRedirect('github')}><FaGithub/></Nav.Link>
             <Nav.Link onClick={() => handleRedirect('linkedin')}><FaLinkedinIn/></Nav.Link>
-            {/* <Nav.Link><Button variant="outline-light">Resume</Button></Nav.Link> */}
+            <Nav.Link onClick={() => handleRedirect('resume')}><Button variant="outline-light">Resume</Button></Nav.Link>
           </Nav>          
         </Navbar.Collapse>
       </Container>

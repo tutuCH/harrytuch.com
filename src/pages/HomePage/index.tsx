@@ -1,5 +1,4 @@
-import { useState, useEffect, useRef, SetStateAction } from "react";
-import { API_GET_DATA } from '../../global/constants'
+import { useEffect, useRef } from "react";
 
 import PortNavbar from "../../components/PortNavbar";
 import Landing from "./sections/Landing"
@@ -10,51 +9,53 @@ import Contact from "./sections/Contact";
 import "./index.scss";
 import Projects from "./sections/Projects";
 
-async function fetchData(setData: { (value: SetStateAction<never[]>): void; (arg0: any): void; }) {
-  const res = await fetch(API_GET_DATA)
-  const { data } = await res.json()
-  setData(data)
-}
-
-async function fetchSetData(data: never[]) {
-  await fetch(API_GET_DATA, {
-    method: "PUT",
-    headers: {
-      'Content-type': 'application/json'
-    },
-    body: JSON.stringify({ data })
-  })
-}
-
 const HomePage = () => {
-  const [data, setData] = useState([]);
-  const submittingStatus = useRef(false);
-
+  const onShowRef = [
+    useRef<HTMLDivElement>(null),
+    useRef<HTMLDivElement>(null),
+    useRef<HTMLDivElement>(null),
+    useRef<HTMLDivElement>(null),
+    useRef<HTMLDivElement>(null),
+  ];
+  // const onShowRef = Array(5).fill(useRef<HTMLDivElement>(null))
   useEffect(() => {
-    if (!submittingStatus.current){
-      return
+    function isInViewport(element: HTMLElement) {
+      const rect = element.getBoundingClientRect();
+      return (
+        rect.top <= (window.innerHeight || document.documentElement.clientHeight) / 1.5 &&
+        rect.bottom >= 0 &&
+        rect.left >= 0 &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+      );
+    }    
+  
+    function onScroll() {
+      onShowRef.forEach((ref) => {
+        const element = ref.current;
+        if (element && isInViewport(element)) {
+          element.classList.add('visible');
+        }
+      });
     }
-    fetchSetData(data)
-      .then(data => submittingStatus.current = false)
-  }, [data])
-
-  useEffect(() => {
-    fetchData(setData)
-  }, [])
-
+  
+    window.addEventListener('scroll', onScroll);
+  
+    return () => {
+      window.removeEventListener('scroll', onScroll);
+    };  
+  }, [onShowRef]);
+  
   return (
     <div className="app">
       <PortNavbar></PortNavbar>
       <Landing></Landing>
       <div className="description__container">
-        <PersonalDetails></PersonalDetails>  
-        <Skills></Skills>  
-        <Experiences></Experiences> 
-        <Projects></Projects>
-        <Contact></Contact>
+      <div ref={onShowRef[0]} className="onShow"><PersonalDetails /></div>
+      <div ref={onShowRef[1]} className="onShow"><Skills /></div>
+      <div ref={onShowRef[2]} className="onShow"><Experiences /></div>
+      <div ref={onShowRef[3]} className="onShow"><Projects /></div>
+      <div ref={onShowRef[4]} className="onShow"><Contact /></div>
       </div>
-      {/* <Edit add={setData} submittingStatus={submittingStatus} />
-      <List listData={data} deleteData={setData} submittingStatus={submittingStatus} /> */}
     </div>
   );
 };

@@ -23,7 +23,16 @@
   @function sample($list) {
     @return nth($list, random(length($list)));
   }
+
+  .onShow {
+    opacity: 0;
+    transition: opacity 1s ease-out;
+  }
   
+  .onShow.visible {
+    opacity: 1;
+  }
+
   .bubbles {
     position: relative;
     width: 100%;
