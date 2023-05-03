@@ -17,7 +17,7 @@ const Landing = () => {
           </Container>
         </div>
       </div>
-      <div>{bubbleDiv}</div>
+      {/* <div>{bubbleDiv}</div> */}
     </div>
   );
 };
