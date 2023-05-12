@@ -22,10 +22,11 @@ const HomePage = () => {
     function isInViewport(element: HTMLElement) {
       const rect = element.getBoundingClientRect();
       return (
-        rect.top <= (window.innerHeight || document.documentElement.clientHeight) / 1.5 &&
+        (rect.top <= (window.innerHeight || document.documentElement.clientHeight) / 1.5 &&
         rect.bottom >= 0 &&
         rect.left >= 0 &&
-        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth)) ||
+        rect.bottom - (window.innerHeight || document.documentElement.clientHeight) <= 0
       );
     }    
   
