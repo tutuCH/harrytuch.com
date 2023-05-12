@@ -1,5 +1,3 @@
-// import { SetStateAction, useState } from "react";
-// import { v4 } from "uuid";
 import { landingInfo } from "../../../assets/data/data";
 import "../../HomePage/index.scss";
 import { Container, Row } from "react-bootstrap";

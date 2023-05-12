@@ -13,6 +13,7 @@ export const basicInfo: PersonalInfo = {
     "Hi guys! I am a passionate and motivated individual with a strong foundation in web development. I am always eager to learn new technologies and techniques, and I am committed to delivering high-quality, scalable, and maintainable code. I am a team player with excellent communication skills who loves to work with people. Feel free to have a look at my education background and professional certificate below.",
   education: [
     {
+      imageType: "CUHK",
       content:
         "The Chinese University of Hong Kong - B.Sc. in Computer Science (2017-2021)",
       link: "https://www.credly.com/badges/cc66b438-9096-4850-9f34-7b0a06ae2545/public_url",
@@ -21,10 +22,17 @@ export const basicInfo: PersonalInfo = {
   ],
   certificates: [
     {
+      imageType: "AWS-SAA",
       content: "AWS Certified Solution Architect - Associate (2022)",
       link: "https://www.credly.com/badges/f9120788-0540-45a7-b93d-50f892faf8f7/linked_in_profile",
       src: "../../../assets/images/aws-saa-logo.png"
     },
+    {
+      imageType: "APOLLO-GRAPHQL",
+      content: "Apollo Graph Developer - Associate (2023)",
+      link: "https://www.apollographql.com/tutorials/certifications/7e431e6e-0f53-40c0-84b9-0ff645734ad1",
+      src: "../../../assets/images/graphql.svg"
+    },    
   ],
 };
 
@@ -36,11 +44,15 @@ export const pastExp: TabsDef = {
       title: "Software Developer",
       period: "June, 2021 - Oct, 2022",
       content: [
-        "Experienced tech consultant with a focus on frontend development, having worked with multinational organizations such as FWD, a leading insurance company based in Hong Kong.",
-        "Successfully contributed to the development of an award-winning corporate management agent assist portal platform using Angular in TypeScript, showcasing expertise in web development.",
-        "Demonstrated exceptional skills in database management and optimization while serving as a Tech Consultant at Value Partners Group, an independent asset management firm based in Hong Kong.",
-        "Achieved a >50% reduction in SQL query execution time through effective database updates and maintenance.",
-        "Coordinated with cross-functional teams to ensure seamless implementation of changes, and produced comprehensive documentation to facilitate knowledge sharing and future maintenance.",
+        "Implemented 10 new features and resolved 50 bugs across a digital project.",
+        "Developed and maintained 3 web applications using Angular, Node.js, and other technologies.",
+        "Collaborated with a team of 7 individuals, including a Project Manager, a Technical Lead, a Business Analyst, and several Developers.",
+        "Administered over 1M units of financial business data.",
+        "Accelerated SQL query execution by over 50% through database updates and maintenance.",
+        "Developed an award-winning digital project, owned by a multinational insurance company and recognized by Bloomberg Businessweek.",
+        "Coordinated software development throughout agile project life cycles.",
+        "Partnered with cross-functional teams to implement changes and produce comprehensive documentation for knowledge sharing and future maintenance.",
+        "",
         
       ],
     },
@@ -89,6 +101,9 @@ export const skills: SkillsDef = {
         "NestJS",
         "Tensorflow",
         "Flask",
+        "GraphQL",
+        "Ionic",
+        "Capacitor",
     ],
     Tools: [
         "Bash",
@@ -101,6 +116,7 @@ export const skills: SkillsDef = {
         "Postman",
         "MySQL",
         "MsSQL",
+        "Heroku",
     ]
 }
 

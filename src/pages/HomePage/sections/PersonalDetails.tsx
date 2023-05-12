@@ -3,15 +3,28 @@ import { basicInfo } from "../../../assets/data/data";
 import profilePic from "../../../assets/images/profilePic.jpeg";
 import cuhk from "../../../assets/images/cuhk-logo.png";
 import awsSaa from "../../../assets/images/aws-saa-logo.png";
+import apolloGraphQL from "../../../assets/images/graphql.svg";
 import { Col, Container, Row } from "react-bootstrap";
 import { linkedContent } from "../../../assets/data/dataDef";
 const PersonalDetails = () => {
   const educations = basicInfo.education;
   const certificates = basicInfo.certificates;
+  function getCertificateContent(imageType: string) {
+    switch (imageType) {
+      case "CUHK":
+        return cuhk;
+      case "AWS-SAA":
+        return awsSaa;
+      case "APOLLO-GRAPHQL":
+        return apolloGraphQL;
+      default:
+        return "";
+    }
+  }
 
   function featuredExperiences(exp: Array<linkedContent>, category: string) {
     return exp.map(
-      (e: { content: string; link: string, src: string }, index: number) => (
+      (e: {imageType: string; content: string; link: string, src: string }, index: number) => (
         <Container
           key={index}
           className="featured-experiences-link experiences-animation-element"
@@ -23,8 +36,8 @@ const PersonalDetails = () => {
             <Col sm={10}>
               <p key={index}>{e.content}</p>
             </Col>
-            {category === 'edu' && (<Col sm={2}> <img key={index} src={cuhk}  className='experience-logo' alt=""/> </Col>)}
-            {category === 'cert' && (<Col sm={2}> <img key={index} src={awsSaa}  className='experience-logo' alt=""/> </Col>)}
+            {category === 'edu' && (<Col sm={2}> <img key={index} src={getCertificateContent(e.imageType)}  className='experience-logo' alt="education logo"/> </Col>)}
+            {category === 'cert' && e.src && (<Col sm={2}> <img key={index} src={getCertificateContent(e.imageType)}  className='experience-logo' alt="certification logo"/> </Col>)}
           </Row>
         </Container>
       )

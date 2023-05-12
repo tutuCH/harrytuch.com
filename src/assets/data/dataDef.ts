@@ -1,7 +1,8 @@
 export interface NavBarTabs {
     title: string,
 }
-export interface linkedContent {    
+export interface linkedContent {   
+    imageType: string, 
     content: string,
     link: string
     src: string
