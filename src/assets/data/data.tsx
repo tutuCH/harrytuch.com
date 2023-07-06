@@ -44,16 +44,14 @@ export const pastExp: TabsDef = {
       title: "Software Developer",
       period: "June, 2021 - Oct, 2022",
       content: [
-        "Implemented 10 new features and resolved 50 bugs across a digital project.",
-        "Developed and maintained 3 web applications using Angular, Node.js, and other technologies.",
-        "Collaborated with a team of 7 individuals, including a Project Manager, a Technical Lead, a Business Analyst, and several Developers.",
-        "Administered over 1M units of financial business data.",
-        "Accelerated SQL query execution by over 50% through database updates and maintenance.",
-        "Developed an award-winning digital project, owned by a multinational insurance company and recognized by Bloomberg Businessweek.",
-        "Coordinated software development throughout agile project life cycles.",
-        "Partnered with cross-functional teams to implement changes and produce comprehensive documentation for knowledge sharing and future maintenance.",
-        "",
-        
+        "Built an award-winning digital project owned by a multinational insurance company with a substantial user base of 5000+ active insurance agents.",
+        "Developed and maintained 2 web applications using Angular, Angular Material, Sass, RxJS, NgRx for frontend development and Jenkins for CI/CD.",
+        "Constructed a web form generation tool featuring diverse input types and validations, streamlining the form-building process for future development efforts.",
+        "Optimized the search functionality by implementing a generic search component, resulting in a reduction of 2 man-days of development time per sprint.",
+        "Managed and processed over 1M+ units of financial business data while optimizing MSSQL query execution by over 50% through efficient database updates.",
+        "Implemented unit testing procedures using Mocha and Playwright, resulting in a significant improvement in software quality and reducing post-release defects by 10%.",
+        "Successfully coordinated software development throughout 10+ agile project life cycles, with 100% on-time delivery for each sprint.",
+        "Partnered with cross-functional and offshore teams using Jira, Slack, Adobe XD, and produced documentation for future maintenance using Confluence.",
       ],
     },
     {
@@ -61,9 +59,10 @@ export const pastExp: TabsDef = {
       title: "Software Engineer Intern",
       period: "June,2020 - June,2021",
       content: [
-        "Demonstrated full-stack development expertise while working on a third-party payment app, and contributed to front-end development for delivery applications using Vue.js for the frontend and Express.js for the backend.",
-        "Participated in a major application revamp for Jumppoint, a e-Commerce Logistics Technology Platform, using Vue.js for the frontend, showcasing development skills.",
-        "Designed and developed an internal dashboard using Vue.js and Express.js, providing real-time insights into revenue and business performance to facilitate data-driven decision-making.",
+        "Contributed to the full-stack development of Jumppoint, a delivery application, using Vue, Vuetify, CSS3, HTML5, ExpressJS, MySQL, AWS EC2, and AWS S3.",
+        "Utilized Capacitor plugins to develop PWA features, including Camera for QR code scanning, while implementing features for the complete courier pick-up process.",
+        "Collaborated with a UI/UX designer to implement a new layout across 5+ pages for Jumppoint, leading to its adoption by over 10,000 active merchants.",
+        "Designed and implemented an user-friendly real time dashboard using VueJS, ExpressJS and MySQL. The real time revenue and business performance enabled the organization to make data driven decisions.",
       ],
     },
     {
@@ -71,10 +70,9 @@ export const pastExp: TabsDef = {
       title: "Software Engineer Intern",
       period: "June, 2019 - August, 2019",
       content: [
-        "Responsible for developing and debugging for a Java Spring Boot application with features including as data visualization, real-time data update etc.",
-        "Created RESTful Web Service APIs for Anchorage View Project's server in Java using Spring MVC.",
+        "Contributed to the development of a Java Spring Boot application, incorporating features such as data visualization and real-time data updates.",
+        "Created Spring MVC-based RESTful APIs in Java for the Anchorage View Project's server, providing real-time vessel positions.",
         "Converted the Anchorage View Project's web application to use REST web service calls.",
-        "Designed and implemented an interface to fetch data from MDH-MPA APIs and store it in Sybase TSQL using Java.",
       ],
     },
   ],
@@ -104,11 +102,16 @@ export const skills: SkillsDef = {
         "GraphQL",
         "Ionic",
         "Capacitor",
+        "DynamoDB",
+        "MongoDB",
     ],
     Tools: [
         "Bash",
         "Git",
-        "Amazon Web Services",
+        "AWS EC2",
+        "AWS S3",
+        "AWS Lambda",
+        "AWS Cloudformation",
         "Google Colab",
         "Jupyter Notebook",
         "Docker",
@@ -117,6 +120,7 @@ export const skills: SkillsDef = {
         "MySQL",
         "MsSQL",
         "Heroku",
+        "Jenkins",
     ]
 }
 
@@ -129,5 +133,11 @@ export const projects: Array<ProjectsDef> = [
     content: "The website is a rental price predictor for properties in Toronto. It uses a neural network regression model trained on past rental data to make predictions. The frontend is built with React and TypeScript, while the backend is built with Flask. The user can enter the details of a property and the website will predict the rental price based on the provided information. ",
     url: "https://tutuch.github.io/toronto_rental_prediction/",
     github: "https://github.com/tutuCH/toronto_rental_prediction",
-  }
+    pathToImage: "../../../assets/images/toronto-rental-prediction.png",
+  },
+  { 
+    title: "OneHub Business Consulting Report Manager",
+    content: "OneHub Business Consulting Report Manager is a platform designed to help the company to manage their images and information for strategic planning reports. The website provides easy-to-use tools for uploading, organizing, and categorizing images and data, allowing businesses to streamline their strategic planning process. With the website, the company can access and share their strategic planning information securely and efficiently.",
+  }  
+
 ]

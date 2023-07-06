@@ -4,7 +4,7 @@ const PortNavbar = () => {
   const redirectLinks = {
     github: "https://github.com/tutuCH",
     linkedin: "https://www.linkedin.com/in/harry-tu-6a0080175/",
-    resume: "https://www.canva.com/design/DAFftvCTTp0/2jE04TWFr9R4zkK1issw_g/view?utm_content=DAFftvCTTp0&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink",
+    resume: "https://docs.google.com/document/d/1Utb_42CuBPRIuevaeg7jNhEMi0bcg1L9/edit?usp=sharing&ouid=102401064847005049634&rtpof=true&sd=true",
   }
   const handleClick = (event: React.MouseEvent<HTMLAnchorElement>) => {
     event.preventDefault();

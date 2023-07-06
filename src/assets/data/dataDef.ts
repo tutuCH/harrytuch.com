@@ -36,5 +36,6 @@ export interface ProjectsDef {
     title: string,
     content: string,
     url?: string,
-    github: string,
+    github?: string,
+    pathToImage?: string,
 }
