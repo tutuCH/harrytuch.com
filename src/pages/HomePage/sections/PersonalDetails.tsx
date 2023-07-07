@@ -36,8 +36,7 @@ const PersonalDetails = () => {
             <Col sm={10}>
               <p key={index}>{e.content}</p>
             </Col>
-            {category === 'edu' && (<Col sm={2}> <img key={index} src={getCertificateContent(e.imageType)}  className='experience-logo' alt="education logo"/> </Col>)}
-            {category === 'cert' && e.src && (<Col sm={2}> <img key={index} src={getCertificateContent(e.imageType)}  className='experience-logo' alt="certification logo"/> </Col>)}
+            {<Col sm={2}> <img key={index} src={getCertificateContent(e.imageType)}  className='experience-logo' alt="logo"/> </Col>}
           </Row>
         </Container>
       )
